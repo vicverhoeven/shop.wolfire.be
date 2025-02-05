@@ -1,4 +1,12 @@
 /* Algemene stijlen */
+* {
+    max-width: 100%;
+}
+
+html {
+    overflow-x: hidden;
+}
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;

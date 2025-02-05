@@ -1,0 +1,145 @@
+/* Algemene stijlen voor de productpagina */
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Change to space-between */
+    align-items: center; /* Align items vertically */
+    background-color: #fcfcfc;
+    padding: 10px 20px;
+    box-shadow: 0 2px 60px rgba(0, 0, 0, 0.1);
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', sans-serif;
+}
+
+.logo {
+    flex: 1; /* Allow the logo to take available space */
+    text-align: center; /* Center the logo */
+}
+
+.shoppingcardlogo {
+    flex: 0 0 auto; /* Prevent the shopping cart logo from growing */
+    text-align: right; /* Align shopping cart logo to the right */
+    margin-right: 30px; /* Adjust margin to fit within the header */
+}
+
+header .logo img {
+    height: 50px;
+    margin-left: 30px;  /*ter compensatie van shopping card*/
+}
+
+nav {
+    position: absolute; /* Dit zorgt ervoor dat de navigatie niet de uitlijning van het logo beïnvloedt */
+    left: 20px;
+    display: flex; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items: center; /* Align nav items vertically */
+}
+
+nav ul li {
+    margin-left: 40px; /* spatie tussen elementen */
+}
+
+ul li a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: normal;
+    font-size:larger;
+}
+
+.shoppingcardlogo img {
+    height: 40px; /* Pas de grootte van het winkelwagentje-icoon aan */
+}
+
+.product-container {
+    display: flex;
+    padding: 20px;
+}
+
+.product-images {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.main-product-image {
+    width: 100%;
+    height: auto;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.thumbnail-images img {
+    width: 48%; /* Adjust thumbnail size */
+    height: auto;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product-details h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.product-details p {
+    margin: 10px 0;
+}
+
+.product-details h2 {
+    color: #ff6600; /* Price color */
+}
+
+.add-to-cart,
+.checkout {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 15px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    display: block; /* Zorgt ervoor dat de knoppen als blokken worden weergegeven */
+    width: 100%; /* Laat de knoppen de volledige breedte van de container innemen */
+    margin-bottom: 10px; /* Voegt ruimte toe tussen de knoppen */
+}
+
+.add-to-cart:hover,
+.checkout:hover {
+    background-color: black;
+    color: white;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+
+
+
