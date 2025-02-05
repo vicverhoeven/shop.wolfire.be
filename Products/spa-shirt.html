@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Page</title>
     <link rel="stylesheet" href="product.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,17 +24,21 @@
     </header>
 
     <main>
+
         <div class="product-container">
             <div class="product-images">
-                <img src="../images/Back-3.png" alt="Product Image" class="main-product-image">
+                <img id="main-image" src="../images/Back-3.png" alt="Product Image" class="main-product-image">
                 <div class="thumbnail-images">
-                    <img src="../images/Front-3.png" alt="Thumbnail 1">
-                    <img src="../images/front_page.JPEG" alt="Thumbnail 2">
+                    <img src="../images/Back-3.png" alt="Thumbnail 1" class="thumbnail" data-fullsize="../images/Back-3.png">
+                    <img src="../images/Front-3.png" alt="Thumbnail 1" class="thumbnail" data-fullsize="../images/Front-3.png">
+                    <img src="../images/spa.JPG" alt="Thumbnail 1" class="thumbnail" data-fullsize="../images/spa.JPG">
+
+                    <!-- Voeg hier meer thumbnails toe met hun respectieve data-fullsize attributen -->
                 </div>
             </div>
             <div class="product-details">
                 <h1>WOLFIRE SPA SHIRT</h1>
-                <p>Extra uitleg over het product. Dit kan informatie bevatten over de kenmerken, voordelen en gebruik.</p>
+                <p>This t-shirt, featuring a stunning photo of Au Rouge in Spa, captures the essence of nature and style. Perfect for any casual outing, it’s a great addition to your wardrobe.</p>
                 <h2>Price: €29,75</h2>
                 <button class="add-to-cart">Voeg toe aan winkelwagentje</button>
                 <form action="https://www.paypal.com/ncp/payment/CVXUYZQNCAGHW" method="post" target="_blank" class="paypal-form">
@@ -51,5 +56,6 @@
     <footer>
         <p>&copy; 2025 Wolfire. Alle rechten voorbehouden.</p>
     </footer>
+    <script src="image_selector.js"></script>
 </body>
 </html>
