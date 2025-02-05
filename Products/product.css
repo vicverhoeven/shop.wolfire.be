@@ -165,3 +165,78 @@ footer {
     background-color: #005f8a; /* Donkerder blauw bij hover */
 }
 
+
+
+/* Mediaquery's voor iPads en smartphones */
+@media (max-width: 1024px) {
+
+
+
+    .shoppingcardlogo {
+        margin-right: 50px;
+    }
+
+    nav ul {
+
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 10px;
+    }
+
+    .product {
+        width: calc(100% - 40px);
+        margin: 10px;
+    }
+
+    .desktop-image {
+        width: 100%; /* Zorgt ervoor dat de afbeelding de volledige breedte van de container neemt */
+        height: auto;
+      }
+    
+      .mobile-image {
+        display: block; 
+        max-width: 100%; 
+        height: auto; 
+        display: none;
+      }
+}
+
+@media (max-width: 768px) {
+
+    header .logo img {
+        height: 30px;
+   }
+
+
+    .desktop-image {
+        display: none; 
+      }
+    
+      .mobile-image {
+        display: block; 
+        max-width: 100%; 
+        height: auto; 
+      }
+
+
+    .logo img {
+        height: auto;
+    } 
+
+    .shoppingcardlogo img {
+        height: 30px;
+    }
+
+
+
+    .product {
+        width: calc(100% - 40px);
+        margin: 10px;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
