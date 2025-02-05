@@ -141,5 +141,27 @@ footer {
 }
 
 
+.paypal-form {
+    display: inline-grid;
+    justify-items: center;
+    align-content: start;
+    gap: 0.5rem;
+    width: 100%; /* Zorgt ervoor dat het formulier de volledige breedte van de container inneemt */
+}
 
+.paypal-button {
+    width: 100%; /* Laat de knop de volledige breedte van het formulier innemen */
+    padding: 15px 20px; /* Pas de padding aan voor een grotere knop */
+    font-size: 16px; /* Verhoog de lettergrootte voor betere leesbaarheid */
+    cursor: pointer;
+    border: none;
+    background-color: #0070ba; /* Stel de achtergrondkleur in op de PayPal-kleur */
+    color: white;
+    border-radius: 0px; /* Voeg afgeronde hoeken toe voor een modernere uitstraling */
+    transition: background-color 0.3s;
+}
+
+.paypal-button:hover {
+    background-color: #005f8a; /* Donkerder blauw bij hover */
+}
 
