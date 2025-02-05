@@ -181,13 +181,9 @@ footer {
 /* Mediaquery's voor iPads en smartphones */
 @media (max-width: 1024px) {
 
-    .logo {
-        margin-bottom: 10px;
-        margin-left: 50px;
-    }
+
 
     .shoppingcardlogo {
-        margin-right: 0;
         margin-right: 50px;
     }
 
@@ -233,7 +229,6 @@ footer {
 
 
     .logo img {
-        
         height: auto;
     } 
 
@@ -242,10 +237,6 @@ footer {
     }
 
 
-    nav ul li {
-        margin-left: 10px;
-        font-size: small;
-    }
 
     .product {
         width: calc(100% - 40px);
