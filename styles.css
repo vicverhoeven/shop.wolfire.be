@@ -136,6 +136,11 @@ ul li a {
     justify-content: center;
 }
 
+.product a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .product img {
     width: 100%;
     height: auto;
