@@ -37,6 +37,21 @@
                 <h1>ITALY SHIRT</h1>
                 <p>Extra uitleg over het product. Dit kan informatie bevatten over de kenmerken, voordelen en gebruik.</p>
                 <h2>Price: €29,75</h2>
+
+                <div class="size-selector">
+                    <input type="radio" id="size-s" name="size" value="S">
+                    <label for="size-s">S</label>
+                
+                    <input type="radio" id="size-m" name="size" value="M">
+                    <label for="size-m">M</label>
+                
+                    <input type="radio" id="size-l" name="size" value="L">
+                    <label for="size-l">L</label>
+                
+                    <input type="radio" id="size-xl" name="size" value="XL">
+                    <label for="size-xl">XL</label>
+                </div>
+
                 <button class="add-to-cart">Add to cart</button>
                 <form action="https://www.paypal.com/ncp/payment/W4LJRUS447PAN" method="post" target="_blank" class="paypal-form">
                     <input class="paypal-button" type="submit" value="Buy Now" />
@@ -55,5 +70,6 @@
     </footer>
 
     <script src="image_selector.js"></script>
+    <script src="../scripts/sizeSelector.js"></script>
 </body>
 </html>

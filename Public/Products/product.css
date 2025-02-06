@@ -170,6 +170,37 @@ footer {
 
 
 
+
+.size-selector {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.size-selector input[type="radio"] {
+    display: none;
+}
+
+.size-selector label {
+    display: inline-block;
+    padding: 10px 70px;
+    cursor: pointer;
+    transition: background-color 0.1s
+}
+
+.size-selector input[type="radio"]:checked + label {
+    background-color: #000000;
+    color: #f0f0f0;
+    border-color: #888;
+}
+
+.size-selector label:hover {
+    background-color: #f0f0f0;
+    border-color: #888;
+}
+
+
+
 /* Mediaquery's voor iPads en smartphones */
 @media (max-width: 1024px) {
     .shoppingcardlogo {
