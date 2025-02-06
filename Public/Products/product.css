@@ -294,4 +294,11 @@ footer {
     .thumbnail-images img:first-child {
         display: none;
     }
+
+    .size-selector label {
+        display: inline-block;
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.1s
+    }
 }
