@@ -12,10 +12,10 @@ fetch(`http://localhost:3000/api/product/${productId}`)
     console.log('Product data:', product); // Log the product data
     container.innerHTML = `
         <div class="product-images">
-            <img src="${product.images[0].src}" alt="${product.title}" class="main-product-image">
+            <img src="${product.images[0].src}" alt="${product.title}" class="main-product-image" id="main-image">
             <div class="thumbnail-images">
                 ${product.images.map(image => `
-                    <img src="${image.src}" alt="Thumbnail" class="thumbnail">
+                    <img src="${image.src}" alt="Thumbnail" class="thumbnail" onclick="changeMainImage('${image.src}')">
                 `).join('')}
             </div>
         </div>
@@ -28,3 +28,9 @@ fetch(`http://localhost:3000/api/product/${productId}`)
     `;
 })
 .catch(error => console.error('Fout bij het ophalen van productgegevens:', error));
+
+// Function to change the main image
+function changeMainImage(src) {
+    const mainImage = document.getElementById('main-image');
+    mainImage.src = src; // Update the main image source
+}
